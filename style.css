@@ -1,0 +1,290 @@
+/* rubik-300 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/rubik-v28-latin-300.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* rubik-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/rubik-v28-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* rubik-italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Rubik";
+  font-style: italic;
+  font-weight: 400;
+  src: url("../fonts/rubik-v28-latin-italic.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* rubik-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/rubik-v28-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* barlow-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/barlow-v12-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* barlow-600italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Barlow";
+  font-style: italic;
+  font-weight: 600;
+  src: url("../fonts/barlow-v12-latin-600italic.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* heebo-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Heebo";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/heebo-v22-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+  height: 100%;
+}
+
+img {
+  display: flex;
+  object-fit: cover; /* contain */
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+body {
+  background: var(--Light-Grey, #f4f6fa);
+
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.block {
+  display: none;
+}
+.modes {
+  margin-top: 7rem;
+  margin-bottom: 7rem;
+  display: flex;
+  justify-content: flex-end;
+}
+.titles {
+  margin-right: auto;
+}
+.titles span {
+  color: var(--Dark-Navy, #313e51);
+
+  /* Heading L (Regular) */
+  font-family: Rubik;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 100%; /* 64px */
+}
+.titles h2 {
+  margin-bottom: 48px;
+  color: var(--Dark-Navy, #313e51);
+
+  /* Heading L (Bold) */
+  font-family: Rubik;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 64px */
+}
+.titles p {
+  color: var(--Grey-Navy, #626c7f);
+
+  /* Body S */
+  font-family: Rubik;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 150%; /* 30px */
+}
+.main-container {
+  display: flex;
+}
+.question-item {
+  margin-bottom: 3rem;
+  display: flex;
+  width: 564px;
+  padding: 20px;
+  align-items: center;
+  gap: 32px;
+  border-radius: 24px;
+  background: var(--Pure-White, #fff);
+  box-shadow: 0px 16px 40px 0px rgba(143, 160, 193, 0.14);
+}
+.question-list {
+}
+.item-link {
+  color: var(--Dark-Navy, #313e51);
+
+  /* Heading S */
+  font-family: Rubik;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 28px */
+}
+.white-color {
+  color: var(--Pure-White, #fff);
+}
+.acces-titles {
+  gap: 3.2rem;
+  display: flex;
+  align-items: center;
+}
+.acces-titles p {
+  color: var(--Dark-Navy, #313e51);
+
+  /* Heading S */
+  font-family: Rubik;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 28px */
+}
+.head-wrap {
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+.question-text {
+  margin-right: auto;
+  width: 465px;
+  align-self: stretch;
+  color: var(--Dark-Navy, #313e51);
+
+  /* Heading M */
+  font-family: Rubik;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 43.2px */
+}
+.acces-main-page {
+  margin-top: 3rem;
+  display: flex;
+}
+.answers-list {
+}
+.answers-item {
+  margin-bottom: 2rem;
+  border-radius: 24px;
+  background: var(--Pure-White, #fff);
+  box-shadow: 0px 16px 40px 0px rgba(143, 160, 193, 0.14);
+  display: flex;
+  width: 564px;
+  padding: 12px;
+  align-items: center;
+  gap: 32px;
+}
+.answers-item:hover {
+  border: 3px solid var(--Purple, #a729f5);
+}
+.answer-let {
+  border-radius: 15px;
+  padding: 12px;
+  background-color: #f4f6fa;
+
+  color: var(--Grey-Navy, #626c7f);
+
+  /* Heading S */
+  font-family: Rubik;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 28px */
+}
+.answer-let:hover {
+  background-color: #a729f5;
+}
+.answer-v {
+  color: var(--Dark-Navy, #313e51);
+
+  /* Heading S */
+  font-family: Rubik;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 28px */
+}
+.submit-ans {
+  cursor: pointer;
+  border: 0;
+  width: 564px;
+  border-radius: 24px;
+  background: var(--Purple, #a729f5);
+  box-shadow: 0px 16px 40px 0px rgba(143, 160, 193, 0.14);
+  padding: 20px;
+  color: var(--Pure-White, #fff);
+
+  /* Heading S */
+  font-family: Rubik;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 28px */
+}
+.submit-ans:hover {
+  opacity: 0.4;
+}
+
+.green {
+  border: 3px solid var(--Green, #26d782);
+}
+.red {
+  border: 3px solid var(--Red, #ee5454);
+}
